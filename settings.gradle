@@ -1,0 +1,10 @@
+include ':app'
+rootProject.name = "Aurea-ARApp"
+
+//this will add sceneformsrc folder into your project
+include ':sceneform'
+project(':sceneform').projectDir=file('sceneformsrc/sceneform')
+
+//this will add sceneformux folder into your project
+include ':sceneformux'
+project(':sceneformux').projectDir=file('sceneformux/ux')
